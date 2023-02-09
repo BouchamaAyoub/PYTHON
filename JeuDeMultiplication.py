@@ -1,4 +1,4 @@
-♯ Jeu de table de multiplication simple pour enfants
+# Jeu de table de multiplication simple pour enfants
 
 import random
 
@@ -10,18 +10,20 @@ def menu():
 
 # Fonction qui affiche le jeu
 def jeu():
+    while True :
     # On choisit deux nombres aléatoires entre 1 et 10
-    a = random.randint(1, 10)
-    b = random.randint(1, 10)
+        a = random.randint(1, 10)
+        b = random.randint(1, 10)
     # On demande à l'utilisateur de calculer le produit
-    print("Quel est le produit de", a, "et", b, "?")
+        print("Quel est le produit de", a, "et", b, "?")
     # On lit la réponse de l'utilisateur
-    reponse = int(input())
+        reponse = int(input())
     # On compare la réponse de l'utilisateur avec le produit
-    if reponse == a * b:
-        print("Bravo!")
-    else:
-        print("Dommage, le produit est", a * b)
+        if reponse == a * b:
+            print("Bravo!")
+        else:
+            print("Dommage, le produit est", a * b)
+            break
 
 # Fonction principale
 def main():
